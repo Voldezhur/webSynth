@@ -37,8 +37,8 @@ const LoginForm = () => {
                 {logFormStep === 0
                 ? 
                     (
-                        <button type="submit">
-                            Войти в аккаунт
+                        <button className="login_button" type="submit">
+                            Авторизация
                         </button>
                     )
                 :
@@ -70,7 +70,7 @@ const LoginForm = () => {
                                     placeholder="Введите пароль"
                                     className="login_input"
                                 />
-                                <button type="submit">
+                                <button className="login_button" type="submit">
                                     Войти
                                 </button>
                             </>

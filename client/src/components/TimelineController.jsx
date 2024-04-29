@@ -172,9 +172,9 @@ const TimelineController = ({ activeSynth }) => {
 
             <div className="timeline_songButtons">
                 <ControlButton
-                    handleClick={() => {
-                        setIsLooped(!isLooped);
-                    }}
+                    handleClick={() => {setIsLooped(!isLooped)}}
+                    className="timeline_songButtons_loop"
+                    id="songLoopButton"
                 >
                     Loop {isLooped ? '✔' : '✖'}
                 </ControlButton>
@@ -182,7 +182,7 @@ const TimelineController = ({ activeSynth }) => {
                     handleClick={isLooped ? playSongOnLoop : playSongOnce}
                     className="controlButton"
                 >
-                    Play
+                    Play {'>'}
                 </ControlButton>
                 <ControlButton
                     handleClick={resetSong}

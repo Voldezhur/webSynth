@@ -12,7 +12,6 @@
   padding-right: 2%;
 }
 
-
 .logo {
   cursor: pointer;
 }
@@ -26,6 +25,29 @@
 
 .login_input {
   display: flex;
+  width: 100%;
+  margin: 5px 0 5px 0;
+  padding: 2px 5px 2px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.login_button {
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 0px;
+  background-color: rgb(100, 255, 218);
+  border: none;
+  border-radius: 10px;
+  font-family:'Kelly Slab';
+  font-size: 20px;
+  width: auto;
+  padding: 5px 15px 5px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.login_button:hover {
+  background-color: rgb(84, 209, 179);
 }
 
 .logout_block {

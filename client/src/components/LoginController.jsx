@@ -45,7 +45,7 @@ const LoginController = () => {
                 <div onClick={() => transitToProfile(user.uid)} className="profile_block">
                     Профиль
                 </div>
-                <button onClick={Logout} className="logout_button">
+                <button onClick={Logout} className="login_button">
                     Выйти
                 </button>
             </div>

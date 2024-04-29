@@ -40,9 +40,9 @@ const InstrumentCreation = ({ synthList, setSynthList }) => {
     return (
         <>
             <form onSubmit={handleSubmit} className="synth-creation-form">
-                <button type="button" onClick={testSound}>Протестировать звук</button>
+                <button className="controlButton" type="button" onClick={testSound}>Протестировать звук</button>
 
-                <button>Сохранить синтезатор</button>
+                <button className="controlButton">Сохранить синтезатор</button>
 
                 <div className="synth-options">
                     <div className="synth-meta">

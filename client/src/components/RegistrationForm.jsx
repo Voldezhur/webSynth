@@ -34,8 +34,8 @@ const RegistrationForm = () => {
                 {regFormStep === 0
                 ? 
                     (
-                        <button type="submit">
-                            Нет аккаунта webSynth?
+                        <button className="login_button" type="submit">
+                            Регистрация
                         </button>
                     )
                 :
@@ -83,7 +83,7 @@ const RegistrationForm = () => {
                                     placeholder="Введите пароль"
                                     className="login_input"
                                 />
-                                <button type="submit">
+                                <button className="login_button" type="submit">
                                     Создать аккаунт
                                 </button>
                             </>
