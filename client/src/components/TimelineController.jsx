@@ -142,13 +142,13 @@ const TimelineController = ({ activeSynth }) => {
             <div className="timeline_controlButtons">
                 <ControlButton
                     handleClick={() => createTimeline({cells: cellsArray, id: Date.now()})}
-                    className="controlButton"
+                    className="controlButtonTimeline"
                 >
                     Add timeline
                 </ControlButton>
                 <ControlButton
                     handleClick={removeTimeline}
-                    className="controlButton"
+                    className="controlButtonTimeline"
                 >
                     Delete active timeline
                 </ControlButton>

@@ -1,13 +1,15 @@
 import React from "react";
 import * as Tone from "tone";
 
+import App from "../styles/App.css";
+
 const InstrumentList = ({ setActiveSynth, synthList }) => {
     return (
         <>
             <ul>
                 {
-                    synthList.map(synth => <li key={synth.name}>
-                        <button onClick={() => {
+                    synthList.map(synth => <div className="ditem"><li className="li-item" key={synth.name}>
+                        <button className="synthbutton" onClick={() => {
                             // Изменение активного синтезатора на выбранный и однократное проирывание примера звука
                             setActiveSynth(synth)
                                 
@@ -19,7 +21,8 @@ const InstrumentList = ({ setActiveSynth, synthList }) => {
                         }}>
                             {synth.name}
                         </button>
-                    </li>)
+                    </li>
+                    </div>)
                 }
             </ul>
         </>

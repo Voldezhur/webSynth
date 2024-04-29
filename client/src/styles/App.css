@@ -12,6 +12,7 @@
   padding-right: 2%;
 }
 
+
 .logo {
   cursor: pointer;
 }
@@ -84,14 +85,39 @@
 .instruments {
   display: flex;
   flex-direction: column;
+  margin: 0px;
+  border: none;
+  margin-left: 15px;
 }
 
+.synthbutton {
+  margin-bottom: 10px;
+  font-family: 'Kelly Slab';
+  font-size: 19px;
+  border: none;
+  display: block; 
+  margin-left: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+.ditem{
+  background-color: rgb(255, 255, 255);
+  width: 190px; 
+  height: 100px; 
+  margin-left: -50px;
+}
+
+.li-item{
+  list-style-type: none ;
+}
 /*
 Стили блока создания своего синтезатора
 */
 .synth-creation {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
+  
 }
 
 .synth-creation-form {
@@ -109,7 +135,7 @@
 
 .synth-color-selection {
   display: flex;
-  gap: 5px;
+  gap: 5px; 
 }
 
 .synth-color-preview {
@@ -120,10 +146,10 @@
 }
 
 .synth-options {
-  display: flex;
+  display: flex; 
 }
 
 .synth-meta {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
